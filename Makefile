@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -I./src
-SRCS = src/main.c
-TEST_SRCS = tests/test_factorial.c
+SRCS = src/main.c src/factorial.c
+TEST_SRCS = tests/test_factorial.c src/factorial.c
 OBJS = $(SRCS:.c=.o)
 TEST_OBJS = $(TEST_SRCS:.c=.o)
 
