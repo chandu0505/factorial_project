@@ -13,19 +13,19 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'make'
+                bat 'mingw32-make'
             }
         }
         stage('Test') {
             steps {
-                sh './test_program'
+                bat 'test_program.exe'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'mkdir -p deploy'
-                sh 'cp factorial_program deploy/'
-                sh 'echo "Deployment to local folder successful!"'
+                bat 'mkdir deploy'
+                bat 'copy factorial_program.exe deploy\\'
+                bat 'echo Deployment to local folder successful!'
             }
         }
     }
