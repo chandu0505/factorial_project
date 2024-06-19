@@ -1,5 +1,6 @@
 #include <assert.h>
 #include "factorial.h"
+#include<stdio.h>
 
 void test_factorial() {
     assert(factorial(0) == 1);
