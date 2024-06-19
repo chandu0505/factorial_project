@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/chandu0505/factorial_project.git'
+                git branch: 'main', url: 'https://github.com/chandu0505/factorial_project.git'
             }
         }
         stage('Build') {
