@@ -31,7 +31,7 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: '**/*.o', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'deploy/**', allowEmptyArchive: true
             cleanWs()
         }
     }
