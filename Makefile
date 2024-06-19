@@ -14,4 +14,4 @@ test_program: $(TEST_OBJS)
 	$(CC) -o test_program $(TEST_OBJS)
 
 clean:
-	rm -f $(OBJS) $(TEST_OBJS) factorial_program test_program
+	del /f /q src\*.o tests\*.o factorial_program.exe test_program.exe
