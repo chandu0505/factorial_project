@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'mingw32-make'
+                bat 'make'
             }
         }
         stage('Test') {
